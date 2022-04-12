@@ -1,5 +1,5 @@
 # NorwegianCharactersWithUSKeyboard
-Type Norwegian characters with a US keyboard without switching between languages. It predicts when you want to type Norwegian characters and when you want to simply want to type the special character on the US keyboard..
+Type Norwegian characters with a US keyboard without switching between languages. The script predicts when you want to type Norwegian characters and when you want to simply want to type the special character.
 
 ## Script rationale
 
@@ -20,4 +20,4 @@ You can enable/disable mappings for your own need below. I have found the curren
 
 ### Todo/bugs
 - Currently, the most troublesome conflict is with typing a word starting with a lower case consonant inside a square/curly bracket, i.e. [long] or {long}. If you are able to type [Long]/{Long}, instead of [long]/{Long}, you will not have this issue. The issue could be solved by detecting when a suqare/curly bracket ends and ignore the conversion then.
-- Typing in Edge and Firefox address bar duplicates first letter. I.e. dåp=>ddåp. I can <ins>not</ins> reproduce this in in Chrome 100.0.4896.88 
+- Typing in Edge and Firefox address bar duplicates first letter. I.e. dåp=>ddåp. I can <ins>not</ins> reproduce this issue in in Chrome 100.0.4896.88 
