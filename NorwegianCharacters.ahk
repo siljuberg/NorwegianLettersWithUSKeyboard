@@ -3,7 +3,12 @@
 ********  Type æ,ø,å with English keyboard layout *******
 ********************************************************* 
 
-
+Syntax description:
+* means no end character (space) is required. 
+? means it can be inside another word
+X means Execute. Instead of replacement text, the hotstring accepts a command or expression to execute. See https://www.autohotkey.com/boards/viewtopic.php?f=76&t=96030
+C means case sensitive.
+Documentation: https://www.autohotkey.com/docs/Hotstrings.htm
 
 */
 
