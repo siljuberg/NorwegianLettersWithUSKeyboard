@@ -18,8 +18,6 @@ The following solution to this "Keyboard layout switching burden" is to gramatic
 
 You can enable/disable mappings for your own need below. I have found the current configuration to work fine for me. During the testing period, I found it useful to exclude some applications where the script is more likely to casue trouble than help. For this, see #IfWinNotActive. 
 
-Currently, the most troublesome conflict is with typing a word starting with a lower case consonant inside a square/curly bracket, i.e. [long] or {long}. If you are able to type [Long]/{Long}, instead of [long]/{Long}, you will not have this issue. The issue could be solved by detecting when a suqare/curly bracket ends and ignore the conversion then.
-
-Todo/bugs
-- Writing stuff within square and curly brackets starting with a lower case consonant.
+### Todo/bugs
+- Currently, the most troublesome conflict is with typing a word starting with a lower case consonant inside a square/curly bracket, i.e. [long] or {long}. If you are able to type [Long]/{Long}, instead of [long]/{Long}, you will not have this issue. The issue could be solved by detecting when a suqare/curly bracket ends and ignore the conversion then.
 - Typing in Edge address bar duplicates first letter. I.e. dåp=>ddåp. This is not reproducible in Chrome.
