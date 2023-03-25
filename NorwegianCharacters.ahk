@@ -1,7 +1,10 @@
-﻿/*
+﻿;#Include ..\3rdParty\HotStrings.ahk
+/*
 ********************************************************* 
 ********  Type æ,ø,å with English keyboard layout *******
-********************************************************* 
+*********************************************************
+Author: Morten Kristoffer Siljuberg
+License: MIT
 
 Syntax description:
 * means no end character (space) is required. 
@@ -15,6 +18,7 @@ Documentation: https://www.autohotkey.com/docs/Hotstrings.htm
 ; ***************************************** Exclude script from certain applications ******************************************************
 ; Exlusion list for Norwegian character script. When you are using any of the applications below, this script will be ignored.
 ; If you call this script from another (main) script, then the GroupAdd statements needs to be in the execute section in the main script.
+; *****************************************************************************************************************************************
 ;GroupAdd, exclusionListNorwegianCharacters, ahk_exe notepad++.exe
 GroupAdd, exclusionListNorwegianCharacters, ahk_exe code.exe
 GroupAdd, exclusionListNorwegianCharacters, ahk_exe devenv.exe
@@ -29,11 +33,11 @@ GroupAdd, exclusionListNorwegianCharacters, ahk_exe devenv.exe
 :?*:uær::u'r ; Exception for you're
 :?*:eæv::e'v ; Exception for we've 
 :?*:Iæv::I'v ; Exception for I've 
-:?*:Iæll::I'll ; Exception for I've 
+:?*:Iæll::I'll ; Exception for I'll
 
 ; ************ Exception for genetive contractions ************
 ; First simply maintains all "'s" cases. The remaining are specific exceptions. 
-:?*:æs::'s  ; Exception for all genetive contractions 's.Only conflicting word I can think of is "Æser", which means gods in Norse mythology. Væske er et issue.
+:?*:æs::'s  ; Exception for all genetive contractions 's. Only conflicting word I can think of is "Æser", which means gods in Norse mythology. "Væske" is also an issue.
 ;:?*:tæs::t's ; Exception for contractions like it's 
 ;:?*:eæs::e's ; Exception for contractions like here's, he's, she's 
 ;:?*:ræs::r's ; Exception for contractions like her's, mother's
@@ -291,3 +295,10 @@ GroupAdd, exclusionListNorwegianCharacters, ahk_exe devenv.exe
 #InputLevel 0
 #IfWinNotActive
 Return
+
+#IF A_PriorHotkey = ":?*XC:[l"
+:?*XC:ong]::Send {Bs 2}[long]
+#IF
+
+; Todo
+; https://www.autohotkey.com/boards/viewtopic.php?f=76&t=102686
