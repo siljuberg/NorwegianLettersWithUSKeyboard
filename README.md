@@ -8,17 +8,17 @@ When it comes to "computer stuff", the U.S. keyboard gives a smoother experience
 Other symbols easier to type on a U.S. keyboard are:
 	/\{}[] ;"?| @
 
-### Frequently switching langauge keyboard layout
-If you, like me, frequently type in non-English languages, but prefer the U.S. keyboard for coding/scripting, you likely switch between keyboard layouts throughout the day. E.g. when you get a ping from a colleauge in your native language. After some typing you eventually notice that special symbols are being produced (/\{}[] ;:) instead of the characters you were interested in (i.e. Æ, Ø and Å). You then backspace the wrong character(s), hit Alt+shift and then type again.
+### Frequently switching language keyboard layout
+If you, like me, frequently type in non-English languages, but prefer the U.S. keyboard for coding/scripting, you likely switch between keyboard layouts throughout the day. E.g. when you get a ping from a colleague in your native language. After some typing you eventually notice that special symbols are being produced (/\{}[] ;:) instead of the characters you were interested in (i.e. Æ, Ø and Å). You then backspace the wrong character(s), hit Alt+shift and then type again.
 
 This annoyed me for many years. And I must say the script is a big relief. I have not found any other suitable solution.
 
 ### Solution 
-This script solves the issue by "gramatically" detecting when the user wants to type these special letters and insert them only at that time. The script has evolved over 0.5 year and the most frequent conflicts are resolved. If you find another, I will be happy if you log it as a bug.
+This script solves the issue by "grammatically" detecting when the user wants to type these special letters and insert them only at that time. The script has evolved over 0.5 year and the most frequent conflicts are resolved. If you find another, I will be happy if you log it as a bug.
 
-You can enable/disable mappings for your own need. I have found the current configuration to work fine for me. During the testing period, I found it useful to exclude some applications where the script is more likely to casue trouble than help. For this, see #IfWinActive/#IfWinNotActive. Typical candiates are Teams.exe, chrome.exe, devenv.exe, vscode.exe.
+You can enable/disable mappings for your own need. I have found the current configuration to work fine for me. During the testing period, I found it useful to exclude some applications where the script is more likely to cause trouble than help. For this, see #IfWinActive/#IfWinNotActive. Typical candidates are Teams.exe, chrome.exe, devenv.exe, vscode.exe.
 
 ### Known issues
 - Typing in Edge and Firefox address bar duplicates first letter. I.e. dåp=>ddåp. Only if it is the very first word. I can <ins>not</ins> reproduce this issue in in Chrome version 100.0.4896.88, nor in 111.0.5563.111.
-- Currently, the most troublesome conflict is typing a word starting with a lower case consonant inside a square/curly bracket, i.e. [long] or {long}. If you are able to type [Long]/{Long}, instead of [long]/{Long}, this is not an issue. The issue could be solved by detecting when a suqare/curly bracket ends and ignore the conversion then. Some time ago, I tried to implement a fix proposed by boiler on AHK Forum. It worked in isolation, but when incoorporated in the script, it did not work.
+- Currently, the most troublesome conflict is typing a word starting with a lower case consonant inside a square/curly bracket, i.e. [long] or {long}. If you are able to type [Long]/{Long}, instead of [long]/{Long}, this is not an issue. The issue could be solved by detecting when a square/curly bracket ends and ignore the conversion then. Some time ago, I tried to implement a fix proposed by boiler on AHK Forum. It worked in isolation, but when incorporated in the script, it did not work.
 https://www.autohotkey.com/boards/viewtopic.php?f=76&t=102686

@@ -2,7 +2,7 @@
 ********************************************************* 
 ********  Type æ,ø,å with English keyboard layout *******
 *********************************************************
-Author: Morten Kristoffer Siljuberg
+Author: Morten Kristoffer Siljuberg 
 License: MIT
 
 Syntax description:
@@ -36,7 +36,7 @@ GroupAdd, exclusionListNorwegianCharacters, ahk_exe devenv.exe
 
 ; ************ Exception for genetive contractions ************
 ; First simply maintains all "'s" cases. The remaining are specific exceptions. 
-:?*:æs::'s  ; Exception for all genetive contractions 's. Only conflicting word I can think of is "Æser", which means gods in Norse mythology. "Væske" is also an issue.
+:?*:æs::'s  ; Exception for all genetive contractions 's.  "Væske" is currently an issue. As well as "Æser" (meaning gods in Norse mythology).
 ;:?*:tæs::t's ; Exception for contractions like it's 
 ;:?*:eæs::e's ; Exception for contractions like here's, he's, she's 
 ;:?*:ræs::r's ; Exception for contractions like her's, mother's
@@ -294,6 +294,3 @@ GroupAdd, exclusionListNorwegianCharacters, ahk_exe devenv.exe
 #InputLevel 0
 #IfWinNotActive
 Return
-
-; Todo
-; https://www.autohotkey.com/boards/viewtopic.php?f=76&t=102686
