@@ -1,17 +1,17 @@
 # NorwegianCharactersWithUSKeyboard
-Type Norwegian characters with a U.S. keyboard without switching keyboard layout. The script predicts when you want to type Norwegian characters and when you want special characters. It took half a year of trial and error to find the right balance of hotstrings, and I am now very happy to have a solution.
+Type Norwegian characters with a U.S. keyboard without switching keyboard layout. The script predicts when you want to type Norwegian characters and when you want special characters. It took half a year of trial and error to find the right balance of hotstrings.
 
 ## Script rationale
 
 ### The superiority of the U.S. keyboard layout
-When it comes to "computer stuff", the U.S. keyboard gives a smoother experience than most (possibly all) other keyboard layouts. U.S. keyboards has for example 3 extra keys to enter special symbols, which the Norwegian keyboard has used for Æ,Ø and Å. For example "[", which with the U.S. layout involves moving your pinky 9mm northeast, requires in Norwegian "Alt+Ctrl+8" (or AltGr+8). <br />
+When it comes to "computer stuff", the U.S. keyboard gives a smoother experience than most (possibly all) other keyboard layouts. U.S. keyboards has for example 3 extra keys to enter special symbols, which the Norwegian keyboard has used for Æ,Ø and Å. For example "[", which in U.S. layout involves moving your pinky 9mm northeast, requires in Norwegian "Alt+Ctrl+8" (or AltGr+8).
 Other symbols easier to type on a U.S. keyboard are:
 	/\{}[] ;"?| @
 
 ### Frequently switching language keyboard layout
-If you, like me, frequently type in non-English languages, but prefer the U.S. keyboard for coding/scripting, you likely switch between keyboard layouts throughout the day. E.g. when you get a ping from a colleague in your native language. After some typing you eventually notice that special symbols are being produced (/\{}[] ;:) instead of the characters you were interested in (i.e. Æ, Ø and Å). You then backspace the wrong character(s), hit Alt+shift and then type again.
+If you, like me, frequently type in non-English languages, but prefer U.S. keyboard for coding/scripting, you likely switch between keyboard layouts throughout the day. E.g. when you get a ping from a colleague in your native language. After some typing you eventually notice that special symbols are being produced (/\{}[] ;:) instead of the characters you were interested in (i.e. Æ, Ø and Å). You then backspace the wrong character(s), hit Alt+shift and then type again.
 
-This annoyed me for many years. And I must say the script is a big relief. I have not found any other suitable solution.
+This annoyed me for quite some time. And I must say the script is a big relief. I have not found any other suitable solution.
 
 ### Solution 
 This script solves the issue by "grammatically" detecting when the user wants to type these special letters and insert them only at that time. The script has evolved over 0.5 year and the most frequent conflicts are resolved. If you find another, I will be happy if you log it as a bug.
