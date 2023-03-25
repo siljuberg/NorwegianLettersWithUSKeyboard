@@ -1,5 +1,4 @@
-﻿;#Include ..\3rdParty\HotStrings.ahk
-/*
+﻿/*
 ********************************************************* 
 ********  Type æ,ø,å with English keyboard layout *******
 *********************************************************
@@ -295,10 +294,6 @@ GroupAdd, exclusionListNorwegianCharacters, ahk_exe devenv.exe
 #InputLevel 0
 #IfWinNotActive
 Return
-
-#IF A_PriorHotkey = ":?*XC:[l"
-:?*XC:ong]::Send {Bs 2}[long]
-#IF
 
 ; Todo
 ; https://www.autohotkey.com/boards/viewtopic.php?f=76&t=102686
