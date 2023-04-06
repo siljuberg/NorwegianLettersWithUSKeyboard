@@ -16,13 +16,13 @@ Documentation: https://www.autohotkey.com/docs/Hotstrings.htm
 
 ; ***************************************** Exclude script from certain applications ******************************************************
 ; Exlusion list for Norwegian character script. When you are using any of the applications below, this script will be ignored.
-; If you call this script from another (main) script, then the GroupAdd statements needs to be in the execute section in the main script.
+; If you call this script from another (main) script, then the GroupAdd statements needs to be in the auto execute section in the main script.
 ; *****************************************************************************************************************************************
 ;GroupAdd, exclusionListNorwegianCharacters, ahk_exe notepad++.exe
 GroupAdd, exclusionListNorwegianCharacters, ahk_exe code.exe
 GroupAdd, exclusionListNorwegianCharacters, ahk_exe devenv.exe
 
-#IfWinNotActive, ahk_group exclusionListNorwegianCharacters ; Exclude ceratin applications. See autosection of main section for list definition.
+#IfWinNotActive, ahk_group exclusionListNorwegianCharacters ; Exclude applications listed above.
 ; *****************************************************************************************************************************************
 
 
@@ -36,7 +36,7 @@ GroupAdd, exclusionListNorwegianCharacters, ahk_exe devenv.exe
 
 ; ************ Exception for genetive contractions ************
 ; First simply maintains all "'s" cases. The remaining are specific exceptions. 
-:?*:æs::'s  ; Exception for all genetive contractions 's.  "Væske" is currently an issue. As well as "Æser" (meaning gods in Norse mythology).
+:?*:æs::'s  ; Exception for all genetive contractions 's.  "Væske" is currently an issue. As well as "Æser"
 ;:?*:tæs::t's ; Exception for contractions like it's 
 ;:?*:eæs::e's ; Exception for contractions like here's, he's, she's 
 ;:?*:ræs::r's ; Exception for contractions like her's, mother's
