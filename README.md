@@ -21,3 +21,7 @@ You can enable/disable mappings for your own need. I have found the current conf
 ### Known issues
 - Typing in Edge and Firefox address bar duplicates first letter. I.e. dåp=>ddåp. Only if it is the very first word. I can <ins>not</ins> reproduce this issue in in Chrome version 100.0.4896.88, nor in 111.0.5563.111.
 - Currently, the most troublesome conflict is typing a word starting with a lower case consonant inside a square/curly bracket, i.e. [long] or {long}. If you are able to type [Long]/{Long}, instead of [long]/{Long}, this is not an issue. The issue could be solved by detecting when a square/curly bracket ends and ignore the conversion then. Some time ago, I tried to implement a fix proposed by boiler on AHK Forum. It worked in isolation, but when incorporated in the script, it did not work. See: https://www.autohotkey.com/boards/viewtopic.php?f=76&t=102686
+
+
+### Patreon
+patreon.com/Siljuberg

@@ -2,8 +2,9 @@
 ********************************************************* 
 ********  Type æ,ø,å with English keyboard layout *******
 *********************************************************
-Author: Morten Kristoffer Siljuberg 
-License: MIT
+Author:		Morten Kristoffer Siljuberg
+			patreon.com/Siljuberg
+License:	MIT
 
 Syntax description:
 * means no end character (space) is required. 
