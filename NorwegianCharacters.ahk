@@ -3,7 +3,7 @@
 ********  Type æ,ø,å with English keyboard layout *******
 *********************************************************
 Author:		Morten Kristoffer Siljuberg
-			patreon.com/Siljuberg
+		patreon.com/Siljuberg
 License:	MIT
 
 Syntax description:
