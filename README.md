@@ -1,6 +1,8 @@
 # Norwegian Characters With US Keyboard
 Type Norwegian characters with a U.S. keyboard without switching keyboard layout. The script predicts when you want to type Norwegian characters and when you want special characters. It took half a year of trial and error to find the right balance of hotstrings.
 
+The main idea of the script can presumably be re-used for other languages as well.
+
 ## Script rationale
 
 ### The superiority of the U.S. keyboard layout
